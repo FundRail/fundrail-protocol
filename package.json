@@ -1,0 +1,19 @@
+{
+  "name": "fundrail-protocol",
+  "private": true,
+  "version": "0.1.0",
+  "packageManager": "pnpm@9.15.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "contracts/*"
+  ],
+  "scripts": {
+    "dev": "pnpm -r --parallel --filter ./apps/* run dev",
+    "build": "pnpm -r --filter ./apps/* run build",
+    "lint": "pnpm -r --filter ./apps/* run lint",
+    "test": "pnpm -r --filter ./packages/* --filter ./contracts/* run test",
+    "check": "pnpm lint && pnpm test",
+    "format": "prettier --write ."
+  }
+}

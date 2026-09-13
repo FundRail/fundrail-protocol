@@ -1,0 +1,16 @@
+[package]
+name = "fundrail-payment"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+# Soroban dependencies are intentionally minimal until the contract design is finalized.
+
+[dev-dependencies]
+
+[features]
+default = []

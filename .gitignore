@@ -1,0 +1,41 @@
+# Node / frontend
+node_modules/
+.next/
+out/
+coverage/
+.npm/
+.pnpm-store/
+
+# Rust / Soroban
+/target/
+**/target/
+Cargo.lock
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+!.env.test.example
+!.env.local.example
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+*.log
+
+# Build artifacts
+dist/
+build/
+
+# Local data
+*.sqlite
+*.db
