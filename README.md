@@ -2,20 +2,6 @@
 
 FundRail is a foundation project for building a Stellar/Soroban-powered payment workflow and dashboard. This repository establishes the initial structure, tooling, and project conventions for the FundRail monorepo.
 
-## Repository milestones
-
-This repo currently covers the foundation issues from the FundRail backlog:
-
-- Issue #001: repository initialization
-- Issue #002: monorepo structure
-- Issue #003: package manager and workspace
-- Issue #004: Rust workspace and contract foundation
-- Issue #005: Stellar development documentation
-- Issue #006: Testnet setup guidance
-- Issue #007: local contract testing environment
-- Issue #008: environment configuration
-- Issue #017: payment contract skeleton
-- Issue #018: payment data model foundation
 
 ## Repository layout
 

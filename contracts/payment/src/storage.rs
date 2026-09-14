@@ -36,23 +36,26 @@ impl Default for PaymentStore {
 #[cfg(test)]
 mod tests {
     use super::PaymentStore;
-    use crate::model::{Payment, PaymentAsset, PaymentRecipient, PaymentStatus};
+    use crate::model::{Payment, PaymentAsset, PaymentRecipient, PaymentStatus, PaymentTrigger};
 
     #[test]
     fn store_tracks_payment_status_updates() {
         let mut store = PaymentStore::new();
         store.add(Payment {
             id: "pay_42".to_string(),
+            trigger: PaymentTrigger::PaymentReceived,
             amount: 50,
             asset: PaymentAsset {
                 code: "XLM".to_string(),
                 issuer: None,
             },
             sender: "GONE".to_string(),
-            recipient: PaymentRecipient {
+            recipients: vec![PaymentRecipient {
+                label: "Creator payout".to_string(),
                 account_id: "GTWO".to_string(),
+                percentage: 100,
                 memo: None,
-            },
+            }],
             status: PaymentStatus::Pending,
             description: None,
         });

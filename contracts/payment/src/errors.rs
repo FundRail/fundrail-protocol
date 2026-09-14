@@ -2,6 +2,7 @@
 pub enum PaymentError {
     InvalidAmount,
     InvalidAsset,
+    InvalidRecipientSplit,
     UnknownPayment,
     InvalidStatusTransition,
 }
@@ -11,6 +12,7 @@ impl PaymentError {
         match self {
             Self::InvalidAmount => "invalid amount",
             Self::InvalidAsset => "invalid asset",
+            Self::InvalidRecipientSplit => "invalid recipient split",
             Self::UnknownPayment => "unknown payment",
             Self::InvalidStatusTransition => "invalid status transition",
         }
@@ -24,5 +26,6 @@ mod tests {
     #[test]
     fn payment_error_is_described() {
         assert_eq!(PaymentError::InvalidAmount.as_str(), "invalid amount");
+        assert_eq!(PaymentError::InvalidRecipientSplit.as_str(), "invalid recipient split");
     }
 }

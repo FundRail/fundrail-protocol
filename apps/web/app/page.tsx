@@ -487,7 +487,7 @@ export default function HomePage() {
               </h2>
 
               <p className="mt-5 max-w-xl text-sm leading-7 text-slate-400">
-                FundRail uses Stellar's smart-contract infrastructure to
+                FundRail uses Stellar smart-contract infrastructure to
                 make payment rules transparent, programmable, and
                 verifiable on-chain.
               </p>
@@ -539,11 +539,11 @@ export default function HomePage() {
               </p>
 
               <h2 className="mt-5 text-3xl font-semibold tracking-tight sm:text-4xl">
-                Don't build payment infrastructure from scratch.
+                Do not build payment infrastructure from scratch.
               </h2>
 
               <p className="mt-5 max-w-xl text-sm leading-7 text-slate-400">
-                Use FundRail's contracts, SDK, APIs, and workflow
+                Use FundRail contracts, SDK, APIs, and workflow
                 primitives to build programmable payment experiences
                 into your own applications.
               </p>
